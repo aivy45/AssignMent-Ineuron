@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Periodic Table</title>
+    <style>
+      .periodic-table,
+      .numbers {
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        gap: 8px;
+        background-color: #f3f3f3;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .element,
+      .numbers p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 1px;
+        flex-direction: column;
+      }
+
+      /* Assign grid positions */
+      /* Row 1 */
+      .row1col1 {
+        grid-row: 1;
+        grid-column: 1;
+      }
+      .row1col18 {
+        grid-row: 1;
+        grid-column: 18;
+      }
+      /* Continue assigning grid positions for the rest of row 1 elements */
+
+      /* Row 2 */
+      .row2col1 {
+        grid-row: 2;
+        grid-column: 1;
+      }
+      .row2col2 {
+        grid-row: 2;
+        grid-column: 2;
+      }
+      /* Continue assigning grid positions for the rest of row 2 elements */
+
+      /* Row 3 */
+      .row3col1 {
+        grid-row: 3;
+        grid-column: 1;
+      }
+      .row3col2 {
+        grid-row: 3;
+        grid-column: 2;
+      }
+      /* Continue assigning grid positions for the rest of row 3 elements */
+
+      /* Row 4 */
+      .row4col1 {
+        grid-row: 4;
+        grid-column: 1;
+      }
+      .row4col2 {
+        grid-row: 4;
+        grid-column: 2;
+      }
+      .blue {
+        background-color: lightblue;
+      }
+      .yellow {
+        background-color: rgb(251, 251, 32);
+      }
+      .red {
+        background-color: lightcoral;
+      }
+      .green {
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Periodic Table</h1>
+
+    <div class="numbers">
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+      <p>4</p>
+      <p>5</p>
+      <p>6</p>
+      <p>7</p>
+      <p>8</p>
+      <p>9</p>
+      <p>10</p>
+      <p>11</p>
+      <p>12</p>
+      <p>13</p>
+      <p>14</p>
+      <p>15</p>
+      <p>16</p>
+      <p>17</p>
+      <p>18</p>
+    </div>
+
+    <div class="periodic-table">
+      <!-- Row 1 -->
+      <div class="element red row1col1">
+        <p>1</p>
+        <h3>H</h3>
+      </div>
+      <div class="element red row1col18">
+        <p>2</p>
+        <h3>He</h3>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="element red row2col1">
+        <p>3</p>
+        <h3>Li</h3>
+      </div>
+      <div class="element red row2col2">
+        <p>4</p>
+        <h3>Be</h3>
+      </div>
+      <div
+        class="element yellow row2col13"
+        style="grid-row: 2; grid-column: 13"
+      >
+        <p>5</p>
+        <h3>B</h3>
+      </div>
+      <div
+        class="element yellow row2col14"
+        style="grid-row: 2; grid-column: 14"
+      >
+        <p>6</p>
+        <h3>C</h3>
+      </div>
+      <div
+        class="element yellow row2col15"
+        style="grid-row: 2; grid-column: 15"
+      >
+        <p>7</p>
+        <h3>N</h3>
+      </div>
+      <div
+        class="element yellow row2col16"
+        style="grid-row: 2; grid-column: 16"
+      >
+        <p>8</p>
+        <h3>O</h3>
+      </div>
+      <div
+        class="element yellow row2col17"
+        style="grid-row: 2; grid-column: 17"
+      >
+        <p>9</p>
+        <h3>F</h3>
+      </div>
+      <div
+        class="element yellow row2col18"
+        style="grid-row: 2; grid-column: 18"
+      >
+        <p>10</p>
+        <h3>Ne</h3>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="element red row3col1" style="grid-row: 3; grid-column: 1">
+        <p>11</p>
+        <h3>Na</h3>
+      </div>
+      <div class="element red row3col2" style="grid-row: 3; grid-column: 2">
+        <p>12</p>
+        <h3>Mg</h3>
+      </div>
+      <div
+        class="element yellow row3col13"
+        style="grid-row: 3; grid-column: 13"
+      >
+        <p>13</p>
+        <h3>Al</h3>
+      </div>
+      <div
+        class="element yellow row3col14"
+        style="grid-row: 3; grid-column: 14"
+      >
+        <p>14</p>
+        <h3>Si</h3>
+      </div>
+      <div
+        class="element yellow row3col15"
+        style="grid-row: 3; grid-column: 15"
+      >
+        <p>15</p>
+        <h3>P</h3>
+      </div>
+      <div
+        class="element yellow row3col16"
+        style="grid-row: 3; grid-column: 16"
+      >
+        <p>16</p>
+        <h3>S</h3>
+      </div>
+      <div
+        class="element yellow row3col17"
+        style="grid-row: 3; grid-column: 17"
+      >
+        <p>17</p>
+        <h3>Cl</h3>
+      </div>
+      <div
+        class="element yellow row3col18"
+        style="grid-row: 3; grid-column: 18"
+      >
+        <p>18</p>
+        <h3>Ar</h3>
+      </div>
+
+      <!-- Row 4 -->
+      <div class="element red" style="grid-row: 4">
+        <p>19</p>
+        <h3>K</h3>
+      </div>
+
+      <div class="element red" style="grid-row: 4">
+        <p>20</p>
+        <h3>Ca</h3>
+      </div>
+
+      <div class="element blue" style="grid-row: 4">
+        <p>21</p>
+        <h3>Sc</h3>
+      </div>
+
+      <div class="element blue" style="grid-row: 4">
+        <p>22</p>
+        <h3>Ti</h3>
+      </div>
+
+      <div class="element blue" style="grid-row: 4">
+        <p>23</p>
+        <h3>V</h3>
+      </div>
+
+      <div class="element blue" style="grid-row: 4">
+        <p>24</p>
+        <h3>Cr</h3>
+      </div>
+      <div class="element blue" style="grid-row: 4">
+        <p>25</p>
+        <h3>Mn</h3>
+      </div>
+      <div class="element blue" style="grid-row: 4">
+        <p>26</p>
+        <h3>Fe</h3>
+      </div>
+      <div class="element blue" style="grid-row: 4">
+        <p>27</p>
+        <h3>Co</h3>
+      </div>
+      <div class="element blue" style="grid-row: 4">
+        <p>28</p>
+        <h3>Ni</h3>
+      </div>
+      <div class="element blue" style="grid-row: 4">
+        <p>29</p>
+        <h3>Cu</h3>
+      </div>
+      <div class="element blue" style="grid-row: 4">
+        <p>30</p>
+        <h3>Zn</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 4">
+        <p>31</p>
+        <h3>Ga</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 4">
+        <p>32</p>
+        <h3>Ge</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 4">
+        <p>33</p>
+        <h3>As</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 4">
+        <p>34</p>
+        <h3>Se</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 4">
+        <p>35</p>
+        <h3>Br</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 4">
+        <p>36</p>
+        <h3>Kr</h3>
+      </div>
+
+      <!-- Row 5  -->
+      <div class="element red" style="grid-row: 5">
+        <p>37</p>
+        <h3>Rb</h3>
+      </div>
+      <div class="element red" style="grid-row: 5">
+        <p>38</p>
+        <h3>Sr</h3>
+      </div>
+      <div class="element blue" style="grid-row: 5">
+        <p>39</p>
+        <h3>Y</h3>
+      </div>
+      <div class="element blue" style="grid-row: 5">
+        <p>40</p>
+        <h3>Zr</h3>
+      </div>
+      <div class="element blue" style="grid-row: 5">
+        <p>41</p>
+        <h3>Nb</h3>
+      </div>
+      <div class="element blue" style="grid-row: 5">
+        <p>42</p>
+        <h3>Mo</h3>
+      </div>
+      <div class="element blue" style="grid-row: 5">
+        <p>43</p>
+        <h3>Tc</h3>
+      </div>
+      <div class="element blue" style="grid-row: 5">
+        <p>44</p>
+        <h3>Ru</h3>
+      </div>
+      <div class="element blue" style="grid-row: 5">
+        <p>45</p>
+        <h3>Rh</h3>
+      </div>
+      <div class="element blue" style="grid-row: 5">
+        <p>46</p>
+        <h3>Pd</h3>
+      </div>
+      <div class="element blue" style="grid-row: 5">
+        <p>47</p>
+        <h3>Ag</h3>
+      </div>
+      <div class="element blue" style="grid-row: 5">
+        <p>48</p>
+        <h3>Cd</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 5">
+        <p>49</p>
+        <h3>In</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 5">
+        <p>50</p>
+        <h3>Sn</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 5">
+        <p>51</p>
+        <h3>Sb</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 5">
+        <p>52</p>
+        <h3>Te</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 5">
+        <p>53</p>
+        <h3>I</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 5">
+        <p>54</p>
+        <h3>Xe</h3>
+      </div>
+
+      <!-- Row 6  -->
+      <div class="element red" style="grid-row: 6">
+        <p>55</p>
+        <h3>Rb</h3>
+      </div>
+      <div class="element red" style="grid-row: 6">
+        <p>56</p>
+        <h3>Sr</h3>
+      </div>
+
+      <div class="element blue" style="grid-row: 6">
+        <p>71</p>
+        <h3>Y</h3>
+      </div>
+      <div class="element blue" style="grid-row: 6">
+        <p>72</p>
+        <h3>Zr</h3>
+      </div>
+      <div class="element blue" style="grid-row: 6">
+        <p>73</p>
+        <h3>Nb</h3>
+      </div>
+      <div class="element blue" style="grid-row: 6">
+        <p>74</p>
+        <h3>Mo</h3>
+      </div>
+      <div class="element blue" style="grid-row: 6">
+        <p>75</p>
+        <h3>Tc</h3>
+      </div>
+      <div class="element blue" style="grid-row: 6">
+        <p>76</p>
+        <h3>Ru</h3>
+      </div>
+      <div class="element blue" style="grid-row: 6">
+        <p>77</p>
+        <h3>Rh</h3>
+      </div>
+      <div class="element blue" style="grid-row: 6">
+        <p>78</p>
+        <h3>Pd</h3>
+      </div>
+      <div class="element blue" style="grid-row: 6">
+        <p>79</p>
+        <h3>Ag</h3>
+      </div>
+      <div class="element blue" style="grid-row: 6">
+        <p>80</p>
+        <h3>Cd</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 6">
+        <p>81</p>
+        <h3>In</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 6">
+        <p>82</p>
+        <h3>Sn</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 6">
+        <p>83</p>
+        <h3>Sb</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 6">
+        <p>84</p>
+        <h3>Te</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 6">
+        <p>85</p>
+        <h3>I</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 6">
+        <p>86</p>
+        <h3>Xe</h3>
+      </div>
+
+      <!-- Row 7  -->
+      <div class="element red" style="grid-row: 7">
+        <p>87</p>
+        <h3>Fr</h3>
+      </div>
+      <div class="element red" style="grid-row: 7">
+        <p>88</p>
+        <h3>Ra</h3>
+      </div>
+
+      <div class="element blue" style="grid-row: 7">
+        <p>103</p>
+        <h3>Fr</h3>
+      </div>
+      <div class="element blue" style="grid-row: 7">
+        <p>104</p>
+        <h3>Rf</h3>
+      </div>
+      <div class="element blue" style="grid-row: 7">
+        <p>105</p>
+        <h3>Db</h3>
+      </div>
+      <div class="element blue" style="grid-row: 7">
+        <p>106</p>
+        <h3>Sg</h3>
+      </div>
+      <div class="element blue" style="grid-row: 7">
+        <p>107</p>
+        <h3>Bh</h3>
+      </div>
+      <div class="element blue" style="grid-row: 7">
+        <p>108</p>
+        <h3>Hs</h3>
+      </div>
+      <div class="element blue" style="grid-row: 7">
+        <p>109</p>
+        <h3>Mt</h3>
+      </div>
+      <div class="element blue" style="grid-row: 7">
+        <p>110</p>
+        <h3>Ds</h3>
+      </div>
+      <div class="element blue" style="grid-row: 7">
+        <p>111</p>
+        <h3>Rg</h3>
+      </div>
+      <div class="element blue" style="grid-row: 7">
+        <p>112</p>
+        <h3>Cn</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 7">
+        <p>113</p>
+        <h3>Nh</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 7">
+        <p>114</p>
+        <h3>Fl</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 7">
+        <p>115</p>
+        <h3>Mc</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 7">
+        <p>116</p>
+        <h3>Lv</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 7">
+        <p>117</p>
+        <h3>Ts</h3>
+      </div>
+      <div class="element yellow" style="grid-row: 7">
+        <p>118</p>
+        <h3>Og</h3>
+      </div>
+
+      <!-- Row 8  -->
+      <div class="element green" style="grid-row: 8; grid-column: 3">
+        <p>57</p>
+        <h3>La</h3>
+      </div>
+      <div class="element green" style="grid-row: 8; grid-column: 4">
+        <p>58</p>
+        <h3>Ce</h3>
+      </div>
+      <div class="element green" style="grid-row: 8; grid-column: 5">
+        <p>59</p>
+        <h3>Pr</h3>
+      </div>
+      <div class="element green" style="grid-row: 8; grid-column: 6">
+        <p>60</p>
+        <h3>Nd</h3>
+      </div>
+      <div class="element green" style="grid-row: 8; grid-column: 7">
+        <p>61</p>
+        <h3>Pm</h3>
+      </div>
+      <div class="element green" style="grid-row: 8; grid-column: 8">
+        <p>62</p>
+        <h3>Sm</h3>
+      </div>
+      <div class="element green" style="grid-row: 8; grid-column: 9">
+        <p>63</p>
+        <h3>Eu</h3>
+      </div>
+      <div class="element green" style="grid-row: 8; grid-column: 10">
+        <p>64</p>
+        <h3>Gd</h3>
+      </div>
+      <div class="element green" style="grid-row: 8; grid-column: 11">
+        <p>65</p>
+        <h3>Tb</h3>
+      </div>
+      <div class="element green" style="grid-row: 8; grid-column: 12">
+        <p>66</p>
+        <h3>Dy</h3>
+      </div>
+      <div class="element green" style="grid-row: 8; grid-column: 13">
+        <p>67</p>
+        <h3>Ho</h3>
+      </div>
+      <div class="element green" style="grid-row: 8; grid-column: 14">
+        <p>68</p>
+        <h3>Er</h3>
+      </div>
+      <div class="element green" style="grid-row: 8; grid-column: 15">
+        <p>69</p>
+        <h3>Tm</h3>
+      </div>
+      <div class="element green" style="grid-row: 8; grid-column: 16">
+        <p>70</p>
+        <h3>Yb</h3>
+      </div>
+
+      <!-- Row 9  -->
+      <div class="element green" style="grid-row: 9; grid-column: 3">
+        <p>89</p>
+        <h3>Ac</h3>
+      </div>
+      <div class="element green" style="grid-row: 9; grid-column: 4">
+        <p>90</p>
+        <h3>Th</h3>
+      </div>
+      <div class="element green" style="grid-row: 9; grid-column: 5">
+        <p>91</p>
+        <h3>Pa</h3>
+      </div>
+      <div class="element green" style="grid-row: 9; grid-column: 6">
+        <p>92</p>
+        <h3>U</h3>
+      </div>
+      <div class="element green" style="grid-row: 9; grid-column: 7">
+        <p>93</p>
+        <h3>Nf</h3>
+      </div>
+      <div class="element green" style="grid-row: 9; grid-column: 8">
+        <p>94</p>
+        <h3>Pu</h3>
+      </div>
+      <div class="element green" style="grid-row: 9; grid-column: 9">
+        <p>95</p>
+        <h3>Am</h3>
+      </div>
+      <div class="element green" style="grid-row: 9; grid-column: 10">
+        <p>96</p>
+        <h3>Cm</h3>
+      </div>
+      <div class="element green" style="grid-row: 9; grid-column: 11">
+        <p>97</p>
+        <h3>Bk</h3>
+      </div>
+      <div class="element green" style="grid-row: 9; grid-column: 12">
+        <p>98</p>
+        <h3>Cf</h3>
+      </div>
+      <div class="element green" style="grid-row: 9; grid-column: 13">
+        <p>99</p>
+        <h3>Es</h3>
+      </div>
+      <div class="element green" style="grid-row: 9; grid-column: 14">
+        <p>100</p>
+        <h3>Fm</h3>
+      </div>
+      <div class="element green" style="grid-row: 9; grid-column: 15">
+        <p>101</p>
+        <h3>Md</h3>
+      </div>
+      <div class="element green" style="grid-row: 9; grid-column: 16">
+        <p>102</p>
+        <h3>No</h3>
+      </div>
+
+      <!-- Continue adding elements for the remaining rows and columns -->
+    </div>
+  </body>
+</html>

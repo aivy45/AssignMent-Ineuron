@@ -1,0 +1,20 @@
+body{
+  background: linear-gradient(90deg , rgb(222, 81, 105) 0%, rgb(145, 141, 141) 100%);
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 15px;
+}
+
+.box{
+  width: auto;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon{
+  font-size: 35px;
+  color: #ffffff;
+}

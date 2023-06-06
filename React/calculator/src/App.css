@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+
+
+.btn{
+  padding: 20px;
+  margin: 1px;
+}
+.calculator{
+  margin: 2vh;
+}
+.result{
+  color: green;
+  font-weight: bold;
+}
