@@ -162,4 +162,22 @@ width, height, padding, border, margin etc.
 
 ### Ans10. Build responsive layout [ Responsive Layout github link](https://github.com/aivy45/AssignMent-Ineuron/tree/main/CSS/ResponsiveLayout)
 
-11. Home Page of Ineuron —--------------
+### Ans11. Home Page of Ineuron —--------------
+
+### Ans 12.
+
+- Pseudo-classes:
+
+  - Pseudo-classes are preceded by a colon (:) and follow the selector.
+  - Pseudo-classes are used to style elements based on various states,
+  - such as :hover, :active, :focus, or based on their position, like :first-child, :nth-child(), or :last-child.
+
+- Pseudo-elements:
+  - Pseudo-elements create virtual elements that can be styled independently of the actual content of an element.
+  - Pseudo-elements are preceded by double colons (::) and follow the selector.
+  - Pseudo-elements are used to insert content before or after an element or selecting the first letter or line of an element.
+- Common pseudo-elements include ::before, ::after.
+
+- Key differences between pseudo-classes and pseudo-elements:
+  - Pseudo-classes are preceded by a single colon (:), while pseudo-elements are preceded by double colons (::)
+  - Pseudo-classes modify the style of the actual selected elements, whereas pseudo-elements add new elements to the DOM or target specific parts of an element's content.
