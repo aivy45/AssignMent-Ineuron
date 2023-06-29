@@ -1,0 +1,48 @@
+// Given a non-negative integer x, return the square root of x rounded down to the nearest integer. The returned integer should be non-negative as well. You must not use any built-in exponent function or operator.
+
+//  Example 1:
+// Input: x = 4 Output: 2 Explanation: The square root of 4 is 2, so we return 2.
+// Example 2:
+
+// Input: x = 8 Output: 2 Explanation: The square root of 8 is 2.82842..., and since we round it down to the nearest integer, 2 is returned.
+// Constraints:
+
+// 0 <= x <= 231 - 1
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int solve(int n)
+{
+    int start = 0, end = n;
+    int ans = 0;
+
+    while (start <= end)
+    {
+        int mid = (start + end) / 2;
+        if (mid * mid <= n)
+        {
+            ans = mid;
+            start = mid + 1;
+        }
+        else
+        {
+            end = mid - 1;
+        }
+    }
+
+    return ans;
+}
+
+int main()
+{
+
+    cout << "'Enter no.'";
+    int n;
+    cin >> n;
+    int ans = solve(n);
+    cout << "ans"
+         << " " << ans << endl;
+
+    return 0;
+}
