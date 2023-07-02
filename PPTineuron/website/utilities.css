@@ -1,0 +1,30 @@
+.bold{
+    font-weight: bolder;
+}
+.btn-border {
+    color: rgb(74, 74, 228);
+    border: 2px solid rgb(74, 74, 228);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-border:hover{
+  color: #233508 ;
+  border-color: #233508;
+}
+.btn {
+    box-shadow: 1px 4px 3px lightblue;
+    background: linear-gradient(90deg, rgb(127, 206, 232) 0% , rgb(55, 55, 225) 100%);
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    padding: 12px 25px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-top: 3vh;
+    cursor: pointer;
+    /* transition: transform 1.5sec ease-in-out; */
+}
+.btn:hover{
+    background: linear-gradient(360deg , #fff 0% ,#233508 100%  );
+}
