@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 2</title>
+  </head>
+
+  <style>
+    #output {
+      background-color: gray;
+      color: rgb(26, 26, 26);
+    }
+    * {
+      margin: 1vh;
+      padding: 0;
+    }
+  </style>
+  <body>
+    <input type="text" id="input" />
+    <button onclick="addText()">Submit</button>
+    <div id="output"></div>
+
+    <script>
+      function addText() {
+        var input = document.getElementById("input");
+        var output = document.getElementById("output");
+        var text = input.value;
+
+        if (text !== "") {
+          var storeResult = document.createElement("p");
+          storeResult.textContent = text;
+          output.appendChild(storeResult);
+          input.value = "";
+        }
+      }
+    </script>
+  </body>
+</html>
