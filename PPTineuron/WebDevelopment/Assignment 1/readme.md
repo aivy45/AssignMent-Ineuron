@@ -16,7 +16,7 @@ these all are tags, but element means tags + the content in it.
 
 #### 4. Html resume: done [Html Resume](https://github.com/aivy45/AssignMent-Ineuron/tree/main/Html/html_resume)
 
-#### 5. Image link: done [Image link](https://github.com/aivy45/AssignMent-Ineuron/tree/main/Html/image)
+#### 5. Image link: done [Image](https://github.com/aivy45/AssignMent-Ineuron/tree/main/Html/image)
 
 #### 6. As the previous version of html doesn’t support video and audio but Html5 supports both audio and video. HTML5 included temporary data storage with the help of SQL on client side and because of this, users can browse already loaded content even when they are offline.
 
