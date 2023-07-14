@@ -1,0 +1,19 @@
+function maxCount(m, n, ops) {
+    let minX = m;
+    let minY = n;
+  
+    for (const [ai, bi] of ops) {
+      minX = Math.min(minX, ai);
+      minY = Math.min(minY, bi);
+    }
+  
+    return minX * minY;
+  }
+  
+  // Example usage:
+  const m = 3;
+  const n = 3;
+  const ops = [[2, 2], [3, 3]];
+  const maxIntegers = maxCount(m, n, ops);
+  console.log(maxIntegers); // Output: 4
+  
